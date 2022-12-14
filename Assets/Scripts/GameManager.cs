@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Zombie")]
+    [Tooltip("Préfab de zombie")]
     [SerializeField] GameObject _prefabzombie;
+    [Space(10)]
     [SerializeField] Transform _spawnPoint;
     [SerializeField] int _nombreDeZombie;
     // Start is called before the first frame update
     void Start()
     {
+         InstantiateXObjectsRandomly();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // if(Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     InstantiateXObjectsRandomly();
+        // }
     }
     public void InstiantiateObject()
     {
@@ -40,4 +47,5 @@ public class GameManager : MonoBehaviour
         }
         
     }
+
 }
