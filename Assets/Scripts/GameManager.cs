@@ -18,9 +18,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         //InstantiateXObjectsRandomly();
-         _input = player.GetComponent<StarterAssetsInputs>();
-     	_playerInput = player.GetComponent<PlayerInput>();   
+         InstantiateXObjectsRandomly();
+         _input = GetComponent<StarterAssetsInputs>();
+     	_playerInput = GetComponent<PlayerInput>();   
     }
 
     // Update is called once per frame
