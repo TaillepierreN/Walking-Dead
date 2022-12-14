@@ -49,15 +49,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "SpawnZombie",
-                    "type": "Button",
-                    "id": "d73c89ba-2d20-4b26-af51-c519b11cbfca",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -245,17 +236,6 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "627f8c18-47e7-4b20-897a-5ca6b3507d8c",
-                    "path": "<Keyboard>/t",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "SpawnZombie",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

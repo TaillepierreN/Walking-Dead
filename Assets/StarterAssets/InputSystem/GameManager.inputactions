@@ -1,0 +1,34 @@
+{
+    "name": "GameManager",
+    "maps": [
+        {
+            "name": "GameManager",
+            "id": "fa2dd7df-0325-4d9e-be00-fbd822887736",
+            "actions": [
+                {
+                    "name": "SpawnZombie",
+                    "type": "Button",
+                    "id": "dfdb414e-cf7b-4e7f-be62-0cd83e9f9c0a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f6a841e8-ff20-478e-a037-b9343e908c48",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "SpawnZombie",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
