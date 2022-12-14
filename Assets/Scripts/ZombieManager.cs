@@ -26,10 +26,13 @@ public class ZombieManager : MonoBehaviour
         {
         _agent.SetDestination(_target.transform.position);
         _animator.SetBool("IsAttacking",false);
+        _agent.isStopped = false;
+
 
         }
         else{
 
+        _agent.isStopped = true;
         _animator.SetBool("IsAttacking",true);
         }
 

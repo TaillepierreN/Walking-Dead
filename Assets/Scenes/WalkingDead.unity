@@ -813,7 +813,7 @@ MonoBehaviour:
   _prefabzombie: {fileID: 4385316000045077988, guid: 044a7277caaeed04fa101c76b546d540,
     type: 3}
   _spawnPoint: {fileID: 451179394}
-  _nombreDeZombie: 5
+  _nombreDeZombie: 1
   player: {fileID: 511388750}
 --- !u!4 &1713553720
 Transform:
