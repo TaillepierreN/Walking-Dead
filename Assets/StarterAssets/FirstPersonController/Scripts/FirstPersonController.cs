@@ -216,10 +216,10 @@ namespace StarterAssets
 			}
 
 		}
-		public void OnSpawnZombie()
- 	  	{
-        _gm.InstantiateXObjectsRandomly();
-  		}
+		// public void OnSpawnZombie()
+ 	  	// {
+        // _gm.InstantiateXObjectsRandomly();
+  		// }
 		private void JumpAndGravity()
 		{
 			if (Grounded)

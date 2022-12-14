@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,11 +12,15 @@ public class GameManager : MonoBehaviour
     [Space(10)]
     [SerializeField] Transform _spawnPoint;
     [SerializeField] int _nombreDeZombie;
+    private StarterAssetsInputs _input;
+    private PlayerInput _playerInput;
+    [SerializeField] GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-         InstantiateXObjectsRandomly();
-        
+         //InstantiateXObjectsRandomly();
+         _input = player.GetComponent<StarterAssetsInputs>();
+     	_playerInput = player.GetComponent<PlayerInput>();   
     }
 
     // Update is called once per frame
@@ -47,5 +53,9 @@ public class GameManager : MonoBehaviour
         }
         
     }
+     public void OnSpawnZombie()
+ 	  	{
+        InstantiateXObjectsRandomly();
+  		}
 
 }
