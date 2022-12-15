@@ -228,7 +228,12 @@ namespace StarterAssets
 		{
 			var laBalle = Instantiate(_balle,_gunPoint.transform.position, _gunPoint.transform.rotation);
 			laBalle.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * _balleForce, ForceMode.Impulse);
+			Destroy(laBalle, 5.0f);
 
+		}
+		private void OnScream()
+		{
+			gameObject.GetComponent<AudioSource>().Play();
 		}
 		// public void OnSpawnZombie()
  	  	// {

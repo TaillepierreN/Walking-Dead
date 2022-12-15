@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InstantiateXObjectsRandomly();
+        //InstantiateXObjectsRandomly();
+        InstiantiateObjectAtStart();
         _input = GetComponent<StarterAssetsInputs>();
         _playerInput = GetComponent<PlayerInput>();   
     }
@@ -35,9 +36,20 @@ public class GameManager : MonoBehaviour
     {
         GameObject.Instantiate(_prefabzombie);
     }
+    public void InstiantiateObjectAtStart()
+    {
+        for(int i=0; i < _nombreDeZombie; i++)
+        {
+            GameObject.Instantiate(_prefabzombie, _spawnPoint.position, _spawnPoint.rotation);
+        }
+    }
     public void InstiantiateObjectAtSpawn()
     {
         GameObject.Instantiate(_prefabzombie, _spawnPoint.position, _spawnPoint.rotation);
+    }
+        public void InstiantiateObjectAtSpecificSpawn(Transform spawn)
+    {
+        GameObject.Instantiate(_prefabzombie, spawn.position, spawn.rotation);
     }
         public void InstiantiateObjectAtPosition(int x, int z)
     {
