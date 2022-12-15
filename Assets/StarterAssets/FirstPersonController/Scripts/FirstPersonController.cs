@@ -52,6 +52,15 @@ namespace StarterAssets
 		public float TopClamp = 90.0f;
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
+		[Space(10)]
+		[Header("Throw")]
+		[Tooltip("Prefab balle")]
+		[SerializeField] GameObject _balle;
+		[Tooltip("Point de depart de Balle")]
+		[SerializeField] GameObject _gunPoint;
+		[Tooltip("Force de la balle")]
+		[SerializeField] float _balleForce;
+
 
 		// cinemachine
 		private float _cinemachineTargetPitch;
@@ -213,6 +222,12 @@ namespace StarterAssets
 				_controller.height=_controller.height +0.5f;
 				isCrouched = false;
 			}
+
+		}
+		private void OnThrow()
+		{
+			var laBalle = Instantiate(_balle,_gunPoint.transform.position, _gunPoint.transform.rotation);
+			laBalle.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * _balleForce, ForceMode.Impulse);
 
 		}
 		// public void OnSpawnZombie()

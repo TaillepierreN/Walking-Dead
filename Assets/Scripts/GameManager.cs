@@ -18,9 +18,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         InstantiateXObjectsRandomly();
-         _input = GetComponent<StarterAssetsInputs>();
-     	_playerInput = GetComponent<PlayerInput>();   
+        InstantiateXObjectsRandomly();
+        _input = GetComponent<StarterAssetsInputs>();
+        _playerInput = GetComponent<PlayerInput>();   
     }
 
     // Update is called once per frame
@@ -46,16 +46,16 @@ public class GameManager : MonoBehaviour
     }
     public void InstantiateXObjectsRandomly()
     {
-   
+
         for(int i=0; i < _nombreDeZombie; i++)
         {
             InstiantiateObjectAtPosition(Random.Range(-49,50),Random.Range(-49,50));
         }
         
     }
-     public void OnSpawnZombie()
- 	  	{
+    public void OnSpawnZombie()
+ 	{
         InstantiateXObjectsRandomly();
-  		}
+  	}
 
 }

@@ -810,6 +810,7 @@ GameObject:
   - component: {fileID: 4504443843810213357}
   - component: {fileID: 1773662664}
   - component: {fileID: 1773662665}
+  - component: {fileID: 4170508007464670988}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -875,7 +876,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4385316000045077988}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 2.59
   m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -884,10 +885,24 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 7.5
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &4170508007464670988
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4385316000045077988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.2
+  m_Height: 10.533916
+  m_Direction: 1
+  m_Center: {x: 0, y: 3.0669534, z: 0}
 --- !u!1 &4659836486816232360
 GameObject:
   m_ObjectHideFlags: 0

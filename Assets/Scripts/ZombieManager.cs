@@ -22,7 +22,7 @@ public class ZombieManager : MonoBehaviour
     {
 
         var distance = Vector3.Distance(_target.transform.position, gameObject.transform.position);
-        if(distance> 1.0f)
+        if(distance> 1.5f)
         {
         _agent.SetDestination(_target.transform.position);
         _animator.SetBool("IsAttacking",false);
