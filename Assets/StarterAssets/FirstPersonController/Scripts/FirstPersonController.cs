@@ -216,7 +216,6 @@ namespace StarterAssets
 		}
 		private void OnCrouch()
 		{
-			Debug.Log("crouch");
 			//transform.position = new Vector3(transform.position.x,transform.position.y - 05f,transform.position.z);
 			if(!isCrouched)
 			{
