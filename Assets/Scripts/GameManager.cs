@@ -12,16 +12,14 @@ public class GameManager : MonoBehaviour
     [Space(10)]
     [SerializeField] Transform _spawnPoint;
     [SerializeField] int _nombreDeZombie;
-    private StarterAssetsInputs _input;
-    private PlayerInput _playerInput;
     [SerializeField] GameObject player;
+    [SerializeField] InputActionReference _actionSpawnZombies;
     // Start is called before the first frame update
     void Start()
     {
-        //InstantiateXObjectsRandomly();
+        _actionSpawnZombies.action.Enable();
+        _actionSpawnZombies.action.performed += OnSpawnZombie;        //InstantiateXObjectsRandomly();
         InstiantiateObjectAtStart();
-        _input = GetComponent<StarterAssetsInputs>();
-        _playerInput = GetComponent<PlayerInput>();   
     }
 
     // Update is called once per frame
@@ -65,9 +63,9 @@ public class GameManager : MonoBehaviour
         }
         
     }
-    public void OnSpawnZombie()
+    public void OnSpawnZombie(InputAction.CallbackContext obj)
  	{
-        InstantiateXObjectsRandomly();
+        InstiantiateObjectAtStart();
   	}
 
 }

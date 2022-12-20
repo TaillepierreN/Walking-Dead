@@ -280,6 +280,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "GameInputs",
+            "id": "df02b4e5-0387-439b-986d-1c2ef54d7452",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "0aba87a9-af08-417c-8b56-18abf5dccf71",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SpawnZombie",
+                    "type": "Button",
+                    "id": "cc5c6c00-337d-4c74-9b65-6286432039e0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "130d9cca-2ae5-4d74-9316-9f09f7f24eb1",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "00e13f8f-a7fe-4224-80de-6ea227fa7b08",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnZombie",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
