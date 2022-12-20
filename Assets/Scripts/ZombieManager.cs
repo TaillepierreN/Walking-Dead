@@ -12,6 +12,7 @@ public class ZombieManager : MonoBehaviour
     AudioSource _audioSource;
     Coroutine zombieSound;
     [SerializeField] GameObject _ragdollPrefab;
+    [SerializeField] List<AudioClip> _audioClips;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,13 +20,14 @@ public class ZombieManager : MonoBehaviour
         _target = GameObject.FindGameObjectWithTag("Player");
         _animator = GetComponent<Animator>();
         _audioSource =  gameObject.GetComponent<AudioSource>();
+        _audioSource.clip = _audioClips[Random.Range(0,_audioClips.Count-1)];
         _animator.SetFloat("Offset", Random.Range(0.0f, 1.0f));
         //int aleatoire = Random.Range(1,100);
         //if (aleatoire >90)
         //{
         //  _audioSource.Play();
         //}
-        var zombieTime = Random.Range(1,50);
+        var zombieTime = Random.Range(1,30);
         StartCoroutine(ZombieMoan(zombieTime));
         
     }
@@ -60,7 +62,7 @@ public class ZombieManager : MonoBehaviour
         {
         _audioSource.Play();
         }
-        var zombieTime = Random.Range(1,50);
+        var zombieTime = Random.Range(1,30);
         StartCoroutine(ZombieMoan(zombieTime));
 
         

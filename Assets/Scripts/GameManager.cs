@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject _prefabzombie;
     [Space(10)]
     [SerializeField] Transform _spawnPoint;
+    [SerializeField] List<Transform> _spawnPoints;
     [SerializeField] int _nombreDeZombie;
     [SerializeField] GameObject player;
     [SerializeField] InputActionReference _actionSpawnZombies;
@@ -63,9 +64,20 @@ public class GameManager : MonoBehaviour
         }
         
     }
+    public void GuyOuInstantiateXObjectsAtRandomSpawnPoint()
+    {
+        for(int i = 0; i < _nombreDeZombie; i++)
+        {
+        int aleatoire;
+        aleatoire = Random.Range(0,_spawnPoints.Count);
+        _spawnPoint = _spawnPoints[aleatoire];      
+        }
+        InstiantiateObjectAtSpawn();
+
+    }
     public void OnSpawnZombie(InputAction.CallbackContext obj)
  	{
-        InstiantiateObjectAtStart();
+        GuyOuInstantiateXObjectsAtRandomSpawnPoint();
   	}
 
 }
