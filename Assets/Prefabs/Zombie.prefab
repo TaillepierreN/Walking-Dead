@@ -868,6 +868,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462dbdfec7ff4154d9df4ffe393e431f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ragdollPrefab: {fileID: 7335301985615476280, guid: ded4c2ed752e45b42816e888be45bfdb,
+    type: 3}
 --- !u!195 &1773662665
 NavMeshAgent:
   m_ObjectHideFlags: 0

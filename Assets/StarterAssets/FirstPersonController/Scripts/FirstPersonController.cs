@@ -60,6 +60,8 @@ namespace StarterAssets
 		[SerializeField] GameObject _gunPoint;
 		[Tooltip("Force de la balle")]
 		[SerializeField] float _balleForce;
+		
+		private Ray _lineOfSight;
 
 
 		// cinemachine
@@ -127,6 +129,10 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			// _lineOfSight = Camera.main.ViewportPointToRay(new Vector3(0.5f,0.5f,0));
+			// RaycastHit hit;
+			// if(Physics.Raycast(_lineOfSight, out hit))
+			// Debug.Log(hit.collider.gameObject.name);
 		}
 
 		private void LateUpdate()

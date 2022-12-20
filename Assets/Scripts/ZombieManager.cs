@@ -11,6 +11,7 @@ public class ZombieManager : MonoBehaviour
     Animator _animator;
     AudioSource _audioSource;
     Coroutine zombieSound;
+    [SerializeField] GameObject _ragdollPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,5 +65,13 @@ public class ZombieManager : MonoBehaviour
 
         
 
+    }
+    private void OnCollisionEnter(Collision other) {
+
+        if(other.collider.CompareTag("Grabbable"))
+        {
+            Instantiate(_ragdollPrefab, transform.position,transform.rotation);
+            Destroy(gameObject);
+        }
     }
 }
