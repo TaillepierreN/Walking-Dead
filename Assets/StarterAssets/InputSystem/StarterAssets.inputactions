@@ -67,6 +67,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Grab",
+                    "type": "Button",
+                    "id": "404de3bd-ed57-47b6-9c01-f7830b54507d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ThrowGrabbed",
+                    "type": "Button",
+                    "id": "aa63bc0c-db9f-4521-a907-29b0dc66b1ea",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -278,6 +296,28 @@
                     "action": "Scream",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1b5ef9af-8c4e-4b38-b332-bc6133a4aa51",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e83cdc0b-256e-4400-a453-57b6c3dc652c",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThrowGrabbed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -285,15 +325,6 @@
             "name": "GameInputs",
             "id": "df02b4e5-0387-439b-986d-1c2ef54d7452",
             "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "0aba87a9-af08-417c-8b56-18abf5dccf71",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
                 {
                     "name": "SpawnZombie",
                     "type": "Button",
@@ -305,17 +336,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "130d9cca-2ae5-4d74-9316-9f09f7f24eb1",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "00e13f8f-a7fe-4224-80de-6ea227fa7b08",
