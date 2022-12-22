@@ -8,6 +8,8 @@ TagManager:
   - GameManager
   - Balle
   - Grabbable
+  - Civilian
+  - Zombie
   layers:
   - Default
   - TransparentFX

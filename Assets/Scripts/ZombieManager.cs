@@ -6,18 +6,18 @@ using UnityEngine.AI;
 public class ZombieManager : MonoBehaviour
 {
 
-    NavMeshAgent _agent;
-    GameObject _target;
     Animator _animator;
     AudioSource _audioSource;
     Coroutine zombieSound;
+    GameObject _target;
+    NavMeshAgent _agent;
     [SerializeField] GameObject _ragdollPrefab;
     [SerializeField] List<AudioClip> _audioClips;
     // Start is called before the first frame update
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
-        _target = GameObject.FindGameObjectWithTag("Player");
+        _target = GameObject.FindGameObjectWithTag("Civilian");
         _animator = GetComponent<Animator>();
         _audioSource =  gameObject.GetComponent<AudioSource>();
         _audioSource.clip = _audioClips[Random.Range(0,_audioClips.Count-1)];
