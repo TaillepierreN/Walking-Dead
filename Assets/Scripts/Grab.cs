@@ -10,6 +10,7 @@ public class Grab : MonoBehaviour
     [SerializeField] float _rayLength;
     [SerializeField] InputActionReference _actionGrab;
     [SerializeField] float _snapForce;
+    [SerializeField] float _throwForce;
     [SerializeField] Transform _holdPosition;
     private Rigidbody _grabbedObject;
     private bool isGrabbed;
@@ -63,7 +64,7 @@ public class Grab : MonoBehaviour
     {
         if(_grabbedObject)
         {
-            _grabbedObject.AddForce(Camera.main.transform.forward * _snapForce, ForceMode.Impulse);
+            _grabbedObject.AddForce(_holdPosition.forward * _throwForce);
             DropDraggedObject();
         }
     }

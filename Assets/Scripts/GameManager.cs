@@ -20,7 +20,8 @@ public class GameManager : MonoBehaviour
     {
         _actionSpawnZombies.action.Enable();
         _actionSpawnZombies.action.performed += OnSpawnZombie;        //InstantiateXObjectsRandomly();
-        InstiantiateObjectAtStart();
+        //InstiantiateObjectAtStart();
+        GuyOuInstantiateXObjectsAtRandomSpawnPoint();
     }
 
     // Update is called once per frame
@@ -70,9 +71,9 @@ public class GameManager : MonoBehaviour
         {
         int aleatoire;
         aleatoire = Random.Range(0,_spawnPoints.Count);
-        _spawnPoint = _spawnPoints[aleatoire];      
+        _spawnPoint = _spawnPoints[aleatoire];
+        InstiantiateObjectAtSpecificSpawn(_spawnPoint);
         }
-        InstiantiateObjectAtSpawn();
 
     }
     public void OnSpawnZombie(InputAction.CallbackContext obj)
