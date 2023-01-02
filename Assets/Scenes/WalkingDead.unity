@@ -78846,15 +78846,15 @@ RectTransform:
   m_GameObject: {fileID: 1671591201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4.36, y: 4.36, z: 4.36}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 359433234}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 6, y: -116}
+  m_AnchoredPosition: {x: 6, y: -450}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1671591203
@@ -80905,7 +80905,7 @@ MonoBehaviour:
   - {fileID: 818835078}
   - {fileID: 138733724}
   - {fileID: 498721970}
-  _nombreDeZombie: 150
+  _nombreDeZombie: 70
   player: {fileID: 511388750}
   _actionSpawnZombies: {fileID: 22075453012733672, guid: 4419d82f33d36e848b3ed5af4c8da37e,
     type: 3}
@@ -98839,8 +98839,8 @@ RectTransform:
   m_GameObject: {fileID: 2128568379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4.65, y: 4.65, z: 4.65}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1308788300}
   m_Father: {fileID: 359433234}
